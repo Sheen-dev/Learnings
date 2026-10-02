@@ -3,18 +3,18 @@ const grade = 89;
 
 function checkGrade(grade) {
   if (grade >= 90) {
-    console.log("Excellent!");
+    return "Excellent";
   } else if (grade >= 80) {
-    console.log("Very Good!");
+    return "Very Good!";
   } else if (grade >= 75) {
-    console.log("Passed.");
+    return "Passed";
   } else {
-    console.log("Failed.");
+    return "Failed.";
   }
 }
 
 function isPassing(grade) {
-  if (grade == "Failed.") {
+  if (grade >= 75) {
     return true;
   } else {
     return false;
